@@ -1,9 +1,10 @@
 # When spreadsheets aren’t good enough: A lesson in relational databases
-#### A mySQL tutorial on relational databases, database normalization and why you might need them
+### A mySQL tutorial on relational databases, database normalization and why you might need them
 
-**Summary** /n
+**Summary** 
+
 Repository for article: "When spreadsheets aren’t good enough: A lesson in relational databases".
-Includes follow-along SQL file code to demonstrate how to structure relational databases using mySQL.
+Includes follow-along SQL code to demonstrate how to structure relational databases using MySQL.
 
 **Contents** 
 1. **Table Creation and Loading**
@@ -16,7 +17,9 @@ Includes follow-along SQL file code to demonstrate how to structure relational d
    - third_normal_form.sql - code used to transform databases into 3NF
 
 3. **Queries**
-  - queries.sql - SQL queries that retrieve information of customers and email prospects to target 
+   - queries.sql - SQL queries that retrieve information of customers and email prospects to target 
 
 **Software**
 - [MySQL](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/) 
+
+*Note: this code can be adapted to work with the SQL server of your choice.* 
