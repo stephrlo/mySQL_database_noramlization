@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 /* DATA INPUTS FOR CUSTOMER AND E-NEWSLETTER TABLES */ 
-=======
-/* DATA INPUTS FOR ORDER AND E-NEWSLETTER TABLES */ 
->>>>>>> 909b2b88a20f0a9ee027b17f2f3e6f20b48f6000
 
 INSERT INTO 
 		customer (customer_id, first_name, last_name, email_address, email_opt_in, city, postal_code)
