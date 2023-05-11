@@ -18,7 +18,7 @@ SELECT c.customer_id,
        en.click_through
 FROM   email_newsletter en
        INNER JOIN 	customer c
-	   ON 			en.email_address = c.email_address; 
+	     ON 			en.email_address = c.email_address; 
 
 -- Renaming email_newsletter to reflect email_newsletter_metrics
 ALTER TABLE email_newsletter 
@@ -38,7 +38,7 @@ SET en.customer_id = c.customer_id;
 DELETE en
 FROM   email_newsletter_metrics en
        INNER JOIN customer c
-	   ON 		  en.customer_id = c.customer_id; 
+	     ON 		  en.customer_id = c.customer_id; 
 SET SQL_SAFE_UPDATES = 1;
 
 -- Creating new email_prospect table
@@ -62,17 +62,17 @@ ALTER TABLE email_newsletter_metrics
 SET SQL_SAFE_UPDATES = 0;
 UPDATE email_newsletter_metrics m
        INNER JOIN 	email_prospect p 
-	   ON 			m.email_address = p.email_address 
+	     ON 			m.email_address = p.email_address 
 SET    m.prospect_id = p.prospect_id; 
 SET SQL_SAFE_UPDATES = 1;
 
 ALTER TABLE email_newsletter_metrics
 	ADD CONSTRAINT fk_prospect_id
-    FOREIGN KEY (prospect_id) REFERENCES email_prospect(prospect_id);
+  FOREIGN KEY (prospect_id) REFERENCES email_prospect(prospect_id);
 
 -- Removing email prospect information from metrics table
 ALTER TABLE 		email_newsletter_metrics
 	DROP COLUMN 	email_address, 
 	DROP COLUMN 	first_name,
-    DROP COLUMN 	last_name,
-    DROP COLUMN 	customer_id;
+  DROP COLUMN 	last_name,
+  DROP COLUMN 	customer_id;
