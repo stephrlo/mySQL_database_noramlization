@@ -1,4 +1,4 @@
-/* DATA INPUTS FOR ORDER AND E-NEWSLETTER TABLES */ 
+/* DATA INPUTS FOR CUSTOMER AND E-NEWSLETTER TABLES */ 
 
 INSERT INTO 
 		customer (customer_id, first_name, last_name, email_address, email_opt_in, city, postal_code)
