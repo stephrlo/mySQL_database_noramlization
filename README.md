@@ -1,15 +1,15 @@
 # When spreadsheets aren’t good enough: A lesson in relational databases
-### A mySQL tutorial on relational databases, database normalization and why you might need them
+### Database normalization, relational databases, and why you need them
 
 **Summary** 
 
-Repository for article: "When spreadsheets aren’t good enough: A lesson in relational databases".
+Repository for Towards Data Science article: ["When spreadsheets aren’t good enough: A lesson in relational databases"](https://medium.com/towards-data-science/when-spreadsheets-arent-good-enough-a-lesson-in-relational-databases-2e5b0b847f5a).
 Includes follow-along SQL code to demonstrate how to structure relational databases using MySQL.
 
 **Contents** 
 1. **Table Creation and Loading**
    - create_tables.sql - creation of synthetic customer and email databases 
-   - data_input.sql - data input to customer and email tables with fake data
+   - data_input.sql - data input to customer and email tables with artificial data
 
 2. **Normal Forms**
    - first_normal_form.sql - code used to transform databases into 1NF
